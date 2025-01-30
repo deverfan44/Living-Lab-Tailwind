@@ -6,3 +6,7 @@
     font-weight: 400;
     font-style: normal;
 }
+
+.product_bg_img {
+    background: linear-gradient(to right bottom, #52db3a 15%, rgba(255, 255, 255, 0)), url("../image/vegetable-offer.png") no-repeat right bottom/70%;
+}
