@@ -34,6 +34,7 @@
         left: 100%;
         top: 100%;
         transform: rotate(180deg);
+        background-color: rgb(247, 136, 9);
     }
     60%{
         right: 100%;
@@ -43,6 +44,7 @@
         top: 100%;
         left: -20px;
         transform: rotate(180deg);
+        background-color: green;
     }
     100%{
         left: -20px;
