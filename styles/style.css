@@ -26,7 +26,6 @@
     60%{
         transform: translateX(-100px);
         border-radius: 20px;
-        background-color: red;
     }
     100%{
         transform: translateX(0px);
