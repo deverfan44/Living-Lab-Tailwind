@@ -10,3 +10,25 @@
 .product_bg_img {
     background: linear-gradient(to right bottom, #52db3a 15%, rgba(255, 255, 255, 0)), url("../image/vegetable-offer.png") no-repeat right bottom/70%;
 }
+
+.animation-div{
+    animation-duration: 5s;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+}
+@keyframes spin{
+    0%{
+        transform: translateX(0px);
+    }
+    30%{
+        transform: translateX(100px);
+    }
+    60%{
+        transform: translateX(-100px);
+        border-radius: 20px;
+        background-color: red;
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
