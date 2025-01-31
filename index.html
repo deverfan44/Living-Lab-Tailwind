@@ -31,14 +31,15 @@
 
 <body class="sora-font">
     <!-- header  -->
-    <header class="px-4 md:px-10 lg:px-5 pt-1 bg-gradient-to-b from-white to-[#EFEBE3]">
+    <header class="md:px-10 lg:px-5 pt-1 bg-gradient-to-b from-white to-[#EFEBE3]">
         <!-- Navbar  -->
-        <div class="max-w-screen-xl mx-auto">
+        <div class="max-w-screen-xl mx-auto border-b border-primary md:border-none">
             <div class="navbar bg-base-100">
                 <div class="navbar-start w-full lg:w-2/5">
                     <div class="dropdown flex-1 flex justify-between lg:flex-auto">
                         <a class="">
-                            <img src="./image/logo-header.png" alt="neature platter logo">
+                            <img src="./image/logo-header.png" class="hidden md:block" alt="neature platter logo">
+                            <img src="./image/Group.png" class="md:hidden" alt="neature platter logo">
                         </a>
 
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -78,7 +79,7 @@
         </div>
 
         <!-- Hero Section  -->
-        <div class="max-w-screen-xl mx-auto pt-24">
+        <div class="px-4 md:px-0 max-w-screen-xl mx-auto pt-12 md:pt-24">
             <!-- Hero Content  -->
             <div class="text-center md:w-[90%] lg:w-[62%] mx-auto space-y-5 mb-12">
                 <h1 class="text-title text-3xl md:text-[3.5rem] leading-tight font-semibold">Freshness <span class="text-primary">You Can Count</span> On, Prices You’ll Love!</h1>
@@ -92,7 +93,7 @@
     </header>
 
     <!-- main  -->
-    <main>
+    <main class="mb-[25rem]">
         <!-- Service Section -->
         <section class="px-4 md:px-10 lg:px-5 my-24">
             <div class="max-w-screen-xl mx-auto">
@@ -330,35 +331,58 @@
                 </div>
             </div>
         </section>
-
-        <!-- news section  -->
-        <section class="px-4 md:px-10 lg:px-5 my-24">
-            <div class="max-w-screen-xl mx-auto">
-                <div class="flex flex-col md:flex-row justify-evenly bg-secondary rounded-2xl py-10">
-                    <!-- News Image  -->
-                    <div class="flex justify-center items-center">
-                        <img src="./image/vegetable-busket.png" alt="">
-                    </div>
-                    <!-- news form  -->
-                    <div class="flex flex-col justify-center p-4 text-center md:text-left">
-                        <h1 class="text-2xl md:text-4xl font-semibold">Get Grocery News!</h1>
-                        <p class="text-lg md:text-xl my-6 text-gray-700">Exclusive training tips, ticks, product deals and more.</p>
-                        <div>
-                            <form action="#">
-                                <input type="email" placeholder="Enter email" class="input input-bordered w-full">
-                                <br>
-                                <button type="submit" class="inline-block px-6 py-2 bg-primary border text-xl text-white rounded-md hover:bg-transparent hover:text-primary hover:border border-primary mt-5">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!-- footer  -->
-    <footer>
+    <section class="bg-primary pt-24 pb-12 relative">
+        <!-- news section  -->
+        <section class="flex justify-center">
+            <section class="px-4 md:px-10 lg:px-5 absolute -top-[45%] md:-top-[50%]">
+                <div class="max-w-screen-xl mx-auto">
+                    <div class="flex flex-col md:flex-row justify-evenly bg-secondary rounded-2xl py-10">
+                        <!-- News Image  -->
+                        <div class="flex justify-center items-center">
+                            <img src="./image/vegetable-busket.png" class="w-[232px] md:w-auto" alt="">
+                        </div>
+                        <!-- news form  -->
+                        <div class="flex flex-col justify-center p-4 text-center md:text-left">
+                            <h1 class="text-2xl text-primary md:text-title md:text-4xl font-semibold">Get Grocery News!</h1>
+                            <p class="text-lg md:text-xl my-2 md:my-6 text-gray-700">Exclusive training tips, ticks, product deals and more.</p>
+                            <div>
+                                <form action="#">
+                                    <input type="email" placeholder="Enter email" class="input input-bordered w-full">
+                                    <br>
+                                    <button type="submit" class="inline-block px-6 py-2 bg-primary border text-xl text-white rounded-md hover:bg-transparent hover:text-primary hover:border border-primary mt-5">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <footer class="footer grid-cols-1 md:grid-cols-3 md:place-items-center p-10 text-white pt-[10rem]">
+            <nav>
+                <img src="./image/logo-footer.png" alt="">
+                <p class="md:w-5/6 text-xl font-light">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+            </nav>
 
+            <nav class="md:space-y-3">
+                <a class="link link-hover text-xl">Products</a>
+                <a class="link link-hover text-xl">Services</a>
+                <a class="link link-hover text-xl">Contact us</a>
+            </nav>
+
+            <nav class="md:mt-12">
+            <h6 class="footer-title">Follow Us</h6>
+                <div class="grid grid-flow-col gap-4">
+                    <a href="#"><i class="fa-brands fa-facebook text-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram text-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube text-xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-x text-xl"></i></a>
+                </div>
+            </nav>
     </footer>
+    </section>
 </body>
 </html>
